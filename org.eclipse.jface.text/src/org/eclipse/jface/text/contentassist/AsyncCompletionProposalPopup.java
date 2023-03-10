@@ -374,8 +374,6 @@ class AsyncCompletionProposalPopup extends CompletionProposalPopup {
 			if (document != null) {
 				return TextUtilities.getContentType(document, fContentAssistant.getDocumentPartitioning(), invocationOffset, true);
 			}
-		} else {
-			return TextUtilities.getContentType(fViewer.getDocument(), fContentAssistant.getDocumentPartitioning(), invocationOffset, true);
 		}
 		return IDocument.DEFAULT_CONTENT_TYPE;
 	}
